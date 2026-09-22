@@ -1,0 +1,66 @@
+.inner-section {
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header-section {
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+.header-section .Serach-filed {
+  width: 228px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 2px;
+  padding-right: 4px;
+  padding-bottom: 2px;
+  padding-left: 12px;
+  border-radius: 50px;
+  background: #ffffff26;
+  border: 1px solid var(--text-muted, #80838d);
+  overflow: hidden;
+}
+.header-section .Estimate-btn {
+  width: 170px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 2px;
+  padding-right: 4px;
+  padding-bottom: 2px;
+  padding-left: 12px;
+  border-radius: 50px;
+  background: var(--VC-Accent-Amber, #f59e0b);
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--VC-Navy, #05164d);
+}
+.header-section .Estimate-btn img {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 39.91px;
+}
+
+.hero-section {
+  background: var(--Navy, #05164d);
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-bottom: 120px;
+  padding-left: 100px;
+  background-image: url(./assets/HeroOverlay.png);
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding: 165px 20px 85px 20px;
+}

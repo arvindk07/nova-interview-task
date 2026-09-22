@@ -1,0 +1,87 @@
+import React from "react";
+
+const tickerItems = [
+  "10-DAY REPLACEMENT GUARANTEE",
+  "PROFILES IN 48 HOURS",
+  "94% ON-TIME DELIVERY",
+  "2,500+ PROJECTS DELIVERED",
+  "675+ ENGINEERS ACTIVE",
+  "4.8* ON CLUTCH",
+  "20+ YEARS IN SOFTWARE DELIVERY",
+];
+
+const logos = [
+  "Yale University",
+  "Dubai Police",
+  "Panasonic",
+  "Infosys",
+  "KIA",
+  "HITACHI",
+  "Orange Business Services",
+  "World Health Organization",
+];
+
+const TrustedByMarquee = () => {
+  return (
+    <div className="w-full bg-white">
+      {/* Top ticker bar */}
+      <div className="overflow-hidden bg-blue-900 py-3">
+        <div className="flex w-max animate-marquee-fast">
+          {[...tickerItems, ...tickerItems].map((item, i) => (
+            <span
+              key={i}
+              className="mx-4 flex shrink-0 items-center text-xs font-semibold tracking-wide text-white"
+            >
+              {item}
+              <span className="ml-4 h-1 w-1 rounded-full bg-amber-400" />
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Trusted by section */}
+      <div className="px-6 py-14 sm:px-10 lg:px-16">
+        <h2 className="text-center text-lg font-semibold text-slate-800">
+          Trusted by startups and Fortune{" "}
+          <span className="text-blue-600">500+</span> companies
+        </h2>
+
+        <div className="relative mt-10 overflow-hidden">
+          {/* Fade edges */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-white to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-white to-transparent" />
+
+          <div className="flex w-max animate-marquee-slow items-center gap-16">
+            {[...logos, ...logos].map((name, i) => (
+              <span
+                key={i}
+                className="shrink-0 whitespace-nowrap text-xl font-bold text-slate-700 opacity-80"
+              >
+                {name}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-marquee-fast {
+          animation: marquee 18s linear infinite;
+        }
+        .animate-marquee-slow {
+          animation: marquee 30s linear infinite;
+        }
+        .animate-marquee-fast:hover,
+        .animate-marquee-slow:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
+    </div>
+  );
+}
+
+export default TrustedByMarquee;
