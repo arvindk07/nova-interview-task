@@ -4,6 +4,19 @@
   width: 100%;
 }
 
+.global-heading {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 46px;
+  line-height: 110.00000000000001%;
+}
+.global-paragraph {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 160%;
+}
+
 .header-section {
   padding: 20px 0;
   position: absolute;
@@ -52,6 +65,8 @@
   border-radius: 39.91px;
 }
 
+/* hero section */
+
 .hero-section {
   background: var(--Navy, #05164d);
   padding-top: 20px;
@@ -63,4 +78,17 @@
   background-position: right bottom;
   background-repeat: no-repeat;
   padding: 165px 20px 85px 20px;
+}
+.hero-section .partner-logo {
+  width: 93px;
+  height: 50px;
+  border-radius: 2px;
+  border-width: 0.87px;
+  background: #070d18;
+  border: 0.87px solid #ffffff4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 2px 4px 2px;
 }
