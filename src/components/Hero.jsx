@@ -74,8 +74,8 @@ const Hero = () => {
         {/* Right column */}
         <div className="relative mx-auto flex w-[35%] justify-center">
           {/* Placeholder photo */}
-          <div className="relative flex w-full items-end justify-center  ">
-            <img src={HeroBoy} alt="Hero Boy" className="max-w-[490px]" />
+          <div className="relative flex w-full items-end justify-center heroBoy-container  ">
+            <img src={HeroBoy} alt="Hero Boy" className="max-w-[490px] z-5" />
           </div>
 
           {/* Top-left floating card */}
@@ -92,7 +92,7 @@ const Hero = () => {
           </div>
 
           {/* Bottom floating cards */}
-          <div className="absolute bottom-20 left-2 w-44 rounded-lg bg-white p-4 shadow-lg">
+          <div className="absolute bottom-20 left-2 w-44 rounded-lg bg-white p-4 shadow-lg z-10">
             <div className="flex items-center gap-2">
               <LuSquareCode size={28} className="text-blue-600" />
               <div className="">
@@ -113,7 +113,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="absolute bottom-0 left-2 w-44 rounded-lg bg-white p-4 shadow-lg">
+          <div className="absolute bottom-0 left-2 w-44 rounded-lg bg-white p-4 shadow-lg z-10">
             <div className="flex items-center gap-2">
               <IoBugOutline size={28} className="text-blue-600" />
 

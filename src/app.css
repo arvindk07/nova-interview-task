@@ -122,6 +122,12 @@
   text-transform: capitalize;
   color: var(--White, #ffffff);
 }
+.hero-section .heroBoy-container {
+  background-image: url(./assets/heroBoyOverlay.png);
+  background-position: 86% 86%;
+  background-size: calc(100% - 30px);
+  background-repeat: no-repeat;
+}
 
 /* cta-section */
 
