@@ -55,7 +55,7 @@ const HowItWorks = () => {
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#0a1450] via-[#0d1a5c] to-[#1e3fa8] px-6 py-16 sm:px-10 lg:px-16">
-      <div className="relative mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
+      <div className="relative  grid inner-section grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
         {/* Left column */}
         <div className="flex flex-col justify-center">
           <p className="text-xs font-semibold tracking-widest text-blue-300">
