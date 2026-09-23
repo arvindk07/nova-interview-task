@@ -47,7 +47,7 @@ const steps = [
 
 const OnboardingProcess = () => {
   return (
-    <section className="bg-white px-6 py-16 sm:px-10 lg:px-16">
+    <section className="Onboarding-section">
       <div className="mx-auto inner-section">
         {/* Header */}
         <div className=" border-b border-slate-100 pb-12 lg:grid-cols-2 lg:gap-16">
@@ -82,13 +82,14 @@ const OnboardingProcess = () => {
                 </span>
                 <div className="h-px flex-1 border-t border-dashed border-slate-200" />
               </div>
-
-              <h3 className="mt-4 text-lg font-semibold text-slate-900">
-                {step.title}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-500">
-                {step.description}
-              </p>
+              <div className=" pr-16">
+                <h3 className="mt-4 text-lg font-semibold text-slate-900">
+                  {step.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-500">
+                  {step.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import downArrow from "../assets/icons/downArrow.svg";
+import { IoIosArrowDown } from "react-icons/io";
 
 const FAQS = [
   {
@@ -83,13 +83,11 @@ const FaqSection = () => {
                     {faq.question}
                   </span>
 
-                  <downArrow />
-
-                  {/* <IoIosArrowDown
+                  <IoIosArrowDown
                     className={`h-5 w-5 flex-shrink-0 transition-transform ${
                       isOpen ? "rotate-180 text-blue-600" : "text-slate-400"
                     }`}
-                  /> */}
+                  />
                 </button>
 
                 {isOpen && (

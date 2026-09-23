@@ -9,14 +9,14 @@ import TrophyIcon from "../assets/icons/price.png";
 import AwardIcon from "../assets/icons/award.png";
 import UsersIcon from "../assets/icons/employee.png";
 
-import affilates1 from "../assets/icons/affilates (1).png";
-import affilates2 from "../assets/icons/affilates (2).png";
-import affilates3 from "../assets/icons/affilates (3).png";
-import affilates4 from "../assets/icons/affilates (4).png";
-import affilates5 from "../assets/icons/affilates (5).png";
-import affilates6 from "../assets/icons/affilates (6).png";
-import affilates7 from "../assets/icons/affilates (7).png";
-import affilates8 from "../assets/icons/affilates (8).png";
+import affilates1 from "../assets/icons/affilates (1).svg";
+import affilates2 from "../assets/icons/affilates (2).svg";
+import affilates3 from "../assets/icons/affilates (3).svg";
+import affilates4 from "../assets/icons/affilates (4).svg";
+import affilates5 from "../assets/icons/affilates (5).svg";
+import affilates6 from "../assets/icons/affilates (6).svg";
+import affilates7 from "../assets/icons/affilates (7).svg";
+import affilates8 from "../assets/icons/affilates (8).svg";
 
 const COUNTRIES = [
   "India",

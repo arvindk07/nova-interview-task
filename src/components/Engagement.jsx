@@ -1,6 +1,6 @@
 const Engagement = () => {
   return (
-    <section className="bg-white px-6 py-16 sm:px-10 lg:px-16">
+    <section className="Engagement-section">
       <div className="mx-auto grid inner-section grid-cols-1 gap-10 lg:grid-cols-[1.3fr_1fr] lg:gap-12">
         {/* Left column */}
         <div>
@@ -21,7 +21,7 @@ const Engagement = () => {
         </div>
 
         {/* Right column */}
-        <div className="rounded-2xl border border-indigo-200 bg-gradient-to-b from-indigo-50/40 to-white p-6 shadow-sm">
+        <div className="Engagement-right-container">
           <h2 className="text-sm font-semibold tracking-wide text-indigo-600">
             WHAT IS STAFF AUGMENTATION?
           </h2>

@@ -3,14 +3,22 @@ import Youtube from "../assets/icons/youtube.svg";
 import Instagram from "../assets/icons/instagram.svg";
 import Linkdin from "../assets/icons/linkedin.svg";
 import Twitter from "../assets/icons/twitter.svg";
-// import { UsaIcon } from "./FooterSvg";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 const socialIcons = {
-  facebook: Facebook,
-  twitter: Twitter,
-  linkedin: Linkdin,
-  instagram: Instagram,
-  youtube: Youtube,
+  facebook: <FaFacebookF className="h-3.5 w-3.5 object-contain brightness-0" />,
+  twitter: <FaTwitter className="h-3.5 w-3.5 object-contain brightness-0" />,
+  linkedin: (
+    <FaLinkedinIn className="h-3.5 w-3.5 object-contain brightness-0" />
+  ),
+  instagram: (
+    <FaInstagram className="h-3.5 w-3.5 object-contain brightness-0" />
+  ),
+  youtube: <FaYoutube className="h-3.5 w-3.5 object-contain brightness-0" />,
 };
 
 const Footer = () => {
@@ -192,11 +200,7 @@ const Footer = () => {
                           aria-label={social}
                           className="flex h-7 w-7 items-center justify-center rounded-full bg-[#8b929c] transition-colors duration-200 hover:bg-white"
                         >
-                          <img
-                            src={Icon}
-                            alt={social}
-                            className="h-3.5 w-3.5 object-contain brightness-0"
-                          />
+                          {Icon}
                         </a>
                       );
                     })}

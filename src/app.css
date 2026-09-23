@@ -92,6 +92,36 @@
   gap: 8px;
   padding: 2px 4px 2px;
 }
+.hero-section .Hero-employee {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 205px;
+  height: auto;
+  border-radius: 20px;
+  padding: 25px;
+  background: #10266eb0;
+  border: 1px solid var(--Azure-Light, #6aa0ff);
+}
+.hero-section .Hero-employee h3 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  margin-top: 20px;
+  line-height: 100%;
+
+  text-transform: capitalize;
+  color: var(--Azure-Light, #6aa0ff);
+}
+.hero-section .Hero-employee p {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 140%;
+  margin-top: 12px;
+  text-transform: capitalize;
+  color: var(--White, #ffffff);
+}
 
 /* cta-section */
 
@@ -178,4 +208,41 @@
 .faq-section {
   background: white;
   padding: 120px 20px;
+}
+
+/* Onboarding-section */
+
+.Onboarding-section {
+  background: var(--surface-1, #fcfcfd);
+  padding: 120px 20px;
+}
+
+/* Engagement-section */
+.Engagement-section {
+  background: white;
+  padding: 20px;
+  padding-bottom: 120px;
+}
+.Engagement-section .Engagement-right-container {
+  position: relative;
+  width: 538px;
+  border-radius: 20px;
+  gap: 30px;
+  border-width: 1px;
+  padding: 30px;
+  background: var(--surface-1, #fcfcfd);
+  border: 1px solid #2563eb33;
+  box-shadow: 0px 4px 14px 3px #0400f514;
+}
+.Engagement-section .Engagement-right-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 20px;
+  top: -4px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 3px solid #2563eb;
 }
