@@ -82,7 +82,7 @@ const BookConsultationForm = () => {
   return (
     <div className="flex min-h-screen w-full flex-col bg-white md:flex-row">
       {/* ---------------- Sidebar ---------------- */}
-      <aside className="w-full flex-shrink-0 border-b border-gray-100 bg-gray-50 pl-6! md:pl-20! pr-6 mt-10 sm:p-8 md:w-[480px] md:border-b-0 md:border-r md:p-10 lg:w-[501px] flex justify-center items-center">
+      <aside className="w-full flex-shrink-0 border-b border-gray-100 bg-gray-50 pl-6! md:pl-20! pr-6 sm:p-8 md:w-[480px] md:border-b-0 md:border-r md:p-10 lg:w-[501px] flex justify-center items-center">
         <div className="w-full">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-gray-800">
             <a

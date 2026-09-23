@@ -116,7 +116,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#1e2024] text-[#8b929c] pt-16 text-sm">
-      <div className="mx-auto max-w-[1200px] px-6">
+      <div className="inner-section">
         {/* ================= Locations ================= */}
         <div className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-between gap-6 mb-16">
           {footerData.locations.map((location, index) => (

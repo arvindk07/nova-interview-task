@@ -41,16 +41,16 @@ const FaqSection = () => {
   const toggle = (i) => setOpenIndex(openIndex === i ? -1 : i);
 
   return (
-    <section className="w-full bg-white px-6 sm:px-10 py-16">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-[380px_1fr]">
+    <section className="faq-section">
+      <div className=" inner-section grid grid-cols-1 gap-10 md:grid-cols-[450px_1fr]">
         {/* LEFT */}
         <div>
-          <h2 className="text-4xl font-extrabold leading-tight text-slate-900">
+          <h2 className="global-heading text-slate-900">
             Frequently Asked
             <br />
             <span className="text-blue-600">Questions</span>
           </h2>
-          <p className="mt-5 text-slate-500 leading-relaxed max-w-sm">
+          <p className="mt-5 text-slate-500 global-paragraph max-w-sm">
             Here is the list of some of the most common questions we hear before
             any engagement. If your query is not listed here, contact us and we
             will get back to you within 24 hours.

@@ -92,3 +92,90 @@
   gap: 8px;
   padding: 2px 4px 2px;
 }
+
+/* cta-section */
+
+.cta-section {
+  background: var(--Navy, #05164d);
+  padding: 70px 20px;
+  background-image:
+    url(./assets/cta-overlay\ \(1\).png), url(./assets/cta-overlay\ \(2\).png),
+    url(./assets/cta-overlay\ \(3\).png);
+  background-size:
+    125px 125px,
+    auto 100%,
+    auto 100%;
+  background-position:
+    left center,
+    right center,
+    90% center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+/* scale-team-section */
+
+.scale-team-section .scale-card {
+  position: relative;
+  border-radius: 12px;
+  background: #071b5e;
+  border: 0.56px solid #40609980;
+  padding: 20px;
+}
+.scale-team-section .scale-card ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 11.21px;
+  background: linear-gradient(
+    297deg,
+    rgba(106, 160, 255, 0.5) 0%,
+    rgba(64, 96, 153, 0.5) 100%
+  );
+  mix-blend-mode: overlay;
+}
+.scale-team-section .scale-card h3 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: var(--White, #ffffff);
+}
+.scale-team-section .scale-card p {
+  font-family: Plus Jakarta Sans;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 10px;
+  leading-trim: NONE;
+  line-height: 140%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  margin-top: 10px;
+  color: var(--White, #ffffff);
+}
+.scale-team-section .scale-card .scale-icons {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  background: #ffffff7e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid #ffffff80;
+}
+
+/* proof-section */
+.proof-section {
+  padding: 100px 20px;
+  background: var(--Surface-1, #fcfcfd);
+}
+/* faq */
+
+.faq-section {
+  background: white;
+  padding: 120px 20px;
+}

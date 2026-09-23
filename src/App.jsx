@@ -11,6 +11,7 @@ import ProofSection from "./components/ProofSection";
 import TrustedByMarquee from "./components/Trustedbymarquee";
 import Hero from "./components/Hero";
 import "./app.css";
+import ScaleTeam from "./components/ScaleTeam";
 
 const App = () => {
   return (
@@ -22,7 +23,7 @@ const App = () => {
       <HowItWorks />
       <EngagementComparison />
       <OnboardingProcess />
-      <CTASection />
+      <ScaleTeam />
       <ProofSection />
       <FaqSection />
       <CTASection />

@@ -1,7 +1,6 @@
 import React from "react";
 
-
-import ChevronDown from "../assets/icons/AnimatedDownArrow.svg"
+import ChevronDown from "../assets/icons/AnimatedDownArrow.svg";
 
 const columns = ["Team Extension", "Delivery Pods", "Development Centres"];
 
@@ -47,16 +46,16 @@ const rows = [
 const EngagementComparison = () => {
   return (
     <section className="relative bg-white px-6 py-16 sm:px-10 lg:px-16">
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto inner-section">
         {/* Header */}
-        <div className="text-center">
-          <h1 className="text-2xl font-bold text-slate-900 sm:text-3xl">
+        <div className="text-center mx-w-lg">
+          <h1 className="global-heading text-slate-900 ">
             Which Engagement Model Fits Your Situation?
           </h1>
-          <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-slate-500">
-            Staff augmentation is not the right model for every buyer. Use
-            this comparison to determine which engagement model best matches
-            your delivery needs.
+          <p className="mx-auto mt-3 max-w-2xl global-paragraph text-slate-500">
+            Staff augmentation is not the right model for every buyer. Use this
+            comparison to determine which engagement model best matches your
+            delivery needs.
           </p>
         </div>
 
@@ -114,16 +113,12 @@ const EngagementComparison = () => {
             aria-label="Show more rows"
             className="absolute left-1/2 top-[calc(50%+1rem)] flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-indigo-600 text-white shadow-md transition hover:bg-indigo-700"
           >
-            <img
-  src={ChevronDown}
-  alt="Show more"
-  className="h-5 w-5"
-/>
+            <img src={ChevronDown} alt="Show more" className="h-5 w-5" />
           </button>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default EngagementComparison;

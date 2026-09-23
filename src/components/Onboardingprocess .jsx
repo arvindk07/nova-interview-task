@@ -48,19 +48,19 @@ const steps = [
 const OnboardingProcess = () => {
   return (
     <section className="bg-white px-6 py-16 sm:px-10 lg:px-16">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto inner-section">
         {/* Header */}
-        <div className="grid grid-cols-1 gap-8 border-b border-slate-100 pb-12 lg:grid-cols-2 lg:gap-16">
-          <div>
+        <div className=" border-b border-slate-100 pb-12 lg:grid-cols-2 lg:gap-16">
+          <div className="">
             <p className="text-xs font-semibold tracking-widest text-indigo-500">
               ONBOARDING TO ONGOING
             </p>
-            <h1 className="mt-3 text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">
+          </div>
+          <div className="flex items-center gap-10">
+            <h1 className=" global-heading text-slate-900 w-[60%]">
               From brief to contributing engineer in five working days
             </h1>
-          </div>
-          <div className="flex items-center">
-            <p className="text-base leading-relaxed text-slate-500">
+            <p className="global-paragraph text-slate-500 w-[40%]">
               The process is designed around one constraint: your team's
               continuity. Engineers join your workflows — not the other way
               around.
@@ -69,14 +69,14 @@ const OnboardingProcess = () => {
         </div>
 
         {/* Steps grid */}
-        <div className="mt-12 grid grid-cols-1 gap-x-12 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1  gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
           {steps.map((step) => (
             <div key={step.number}>
               <p className="text-xs font-medium tracking-wide text-slate-400">
                 {step.tag}
               </p>
 
-              <div className="mt-3 flex items-center gap-3">
+              <div className="mt-3 flex items-center">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-indigo-50 text-sm font-semibold text-indigo-600">
                   {step.number}
                 </span>
@@ -95,6 +95,6 @@ const OnboardingProcess = () => {
       </div>
     </section>
   );
-}
+};
 
 export default OnboardingProcess;

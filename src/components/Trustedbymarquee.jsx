@@ -1,4 +1,12 @@
-import React from "react";
+import Afflite1 from "../assets/icons/affliate (1).svg";
+import Afflite2 from "../assets/icons/affliate (2).svg";
+import Afflite3 from "../assets/icons/affliate (3).svg";
+import Afflite4 from "../assets/icons/affliate (4).svg";
+import Afflite5 from "../assets/icons/affliate (5).svg";
+import Afflite6 from "../assets/icons/affliate (6).svg";
+import Afflite7 from "../assets/icons/affliate (7).svg";
+import Afflite8 from "../assets/icons/affliate (8).svg";
+import Afflite9 from "../assets/icons/affliate (9).svg";
 
 const tickerItems = [
   "10-DAY REPLACEMENT GUARANTEE",
@@ -11,14 +19,15 @@ const tickerItems = [
 ];
 
 const logos = [
-  "Yale University",
-  "Dubai Police",
-  "Panasonic",
-  "Infosys",
-  "KIA",
-  "HITACHI",
-  "Orange Business Services",
-  "World Health Organization",
+  Afflite1,
+  Afflite2,
+  Afflite3,
+  Afflite4,
+  Afflite5,
+  Afflite6,
+  Afflite7,
+  Afflite8,
+  Afflite9,
 ];
 
 const TrustedByMarquee = () => {
@@ -57,7 +66,7 @@ const TrustedByMarquee = () => {
                 key={i}
                 className="shrink-0 whitespace-nowrap text-xl font-bold text-slate-700 opacity-80"
               >
-                {name}
+                <img src={name} alt="" />
               </span>
             ))}
           </div>
@@ -82,6 +91,6 @@ const TrustedByMarquee = () => {
       `}</style>
     </div>
   );
-}
+};
 
 export default TrustedByMarquee;
