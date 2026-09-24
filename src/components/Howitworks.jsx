@@ -28,7 +28,7 @@ function AccordionRow({ title, content, isOpen, onToggle }) {
         className="flex w-full items-center justify-between gap-4 py-6 text-left"
         aria-expanded={isOpen}
       >
-        <span className="text-lg font-semibold text-white">{title}</span>
+        <span className="text-xl font-semibold text-white">{title}</span>
         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-white/25">
           <IoIosArrowDown
             className={`text-blue-300 transition-transform duration-200 ${
@@ -38,7 +38,7 @@ function AccordionRow({ title, content, isOpen, onToggle }) {
         </span>
       </button>
       {isOpen && (
-        <p className="pb-6 text-sm leading-relaxed text-blue-100/80">
+        <p className="pb-6 text-base leading-relaxed text-blue-100/80">
           {content}
         </p>
       )}
@@ -54,14 +54,14 @@ const HowItWorks = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#0a1450] via-[#0d1a5c] to-[#1e3fa8] px-6 py-16 sm:px-10 lg:px-16">
+    <section className="how-it-works-section">
       <div className="relative  grid inner-section grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
         {/* Left column */}
-        <div className="flex flex-col justify-center">
-          <p className="text-xs font-semibold tracking-widest text-blue-300">
+        <div className="flex flex-col ">
+          <p className="text-sm font-semibold tracking-widest text-blue-300">
             HOW IT WORKS
           </p>
-          <h1 className="mt-4 global-heading text-white ">
+          <h1 className="mt-2 global-heading text-white ">
             Individuals, pairs, or small groups – on your tools, your cadence
           </h1>
           <p className="mt-5 max-w-md global-paragraph text-blue-100/80">
@@ -73,9 +73,9 @@ const HowItWorks = () => {
         </div>
 
         {/* Right column */}
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col ">
           <h2 className="text-xl font-semibold text-white">Team Composition</h2>
-          <p className="mt-3 text-sm leading-relaxed text-blue-100/80">
+          <p className="mt-3 text-base leading-relaxed text-blue-100/80">
             Individuals, pairs, or small groups of 3-5. Each engineer is matched
             to your stack - Java/Spring Boot,{" "}
             <a

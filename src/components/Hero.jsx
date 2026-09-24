@@ -2,6 +2,7 @@ import MicroSoft from "../assets/icons/micosoft.svg";
 import Aws from "../assets/icons/aws.svg";
 import Cloud from "../assets/icons/cloud-logo.svg";
 import Clutch from "../assets/icons/clutch.svg";
+import Dots from "../assets/dots.png";
 import { LuSquareCode } from "react-icons/lu";
 import HeroBoy from "../assets/heroBoy.png";
 import { FaArrowRight } from "react-icons/fa";
@@ -133,6 +134,9 @@ const Hero = () => {
                 </span>
               </div>
             </div>
+          </div>
+          <div className="absolute bottom-10 right-8 z-10">
+            <img src={Dots} alt="" />
           </div>
         </div>
       </div>

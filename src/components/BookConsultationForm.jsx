@@ -80,7 +80,7 @@ const BookConsultationForm = () => {
   };
 
   return (
-    <div className="flex min-h-screen w-full flex-col bg-white md:flex-row">
+    <div className="flex w-full flex-col bg-white md:flex-row">
       {/* ---------------- Sidebar ---------------- */}
       <aside className="w-full flex-shrink-0 border-b border-gray-100 bg-gray-50 pl-6! md:pl-20! pr-6 sm:p-8 md:w-[480px] md:border-b-0 md:border-r md:p-10 lg:w-[501px] flex justify-center items-center">
         <div className="w-full">
@@ -148,7 +148,7 @@ const BookConsultationForm = () => {
       </aside>
 
       {/* ---------------- Form ---------------- */}
-      <main className="flex-1 pr-6! pl-6 py-10 md:pr-20! sm:p-8 md:p-10 flex items-center">
+      <main className="flex-1 pr-6! pl-6 py-10 md:py-24 md:pr-20! sm:p-8 md:p-10 flex items-center">
         <div className=" w-full">
           <h1 className="text-2xl font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
             Book Free Consultation

@@ -1,8 +1,3 @@
-import Facebook from "../assets/icons/facebook.svg";
-import Youtube from "../assets/icons/youtube.svg";
-import Instagram from "../assets/icons/instagram.svg";
-import Linkdin from "../assets/icons/linkedin.svg";
-import Twitter from "../assets/icons/twitter.svg";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -123,7 +118,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#1e2024] text-[#8b929c] pt-16 text-sm">
+    <footer className="bg-[#1e2024] text-[#8b929c] pt-12.5 text-sm">
       <div className="inner-section">
         {/* ================= Locations ================= */}
         <div className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-between gap-6 mb-16">
@@ -164,7 +159,7 @@ const Footer = () => {
         </div>
 
         {/* ================= Footer Links ================= */}
-        <div className="flex flex-col md:flex-row flex-wrap justify-between gap-8 mb-12">
+        <div className="flex flex-col md:flex-row flex-wrap justify-between gap-8 mb-12.5">
           {footerData.columns.map((column, index) => (
             <div key={index} className="flex-1 min-w-[150px]">
               <h4 className="text-white text-base mb-6 font-semibold">

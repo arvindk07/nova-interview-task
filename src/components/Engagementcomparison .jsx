@@ -45,7 +45,7 @@ const rows = [
 
 const EngagementComparison = () => {
   return (
-    <section className="relative bg-white px-6 py-16 sm:px-10 lg:px-16">
+    <section className="EngagementComparison-section">
       <div className="mx-auto inner-section">
         {/* Header */}
         <div className="text-center mx-w-lg">
@@ -60,20 +60,20 @@ const EngagementComparison = () => {
         </div>
 
         {/* Table */}
-        <div className="relative mt-10 overflow-hidden rounded-2xl border border-slate-100 shadow-sm">
+        <div className="relative mt-16 overflow-hidden rounded-2xl border border-slate-100 shadow-sm">
           <div className="overflow-x-auto">
             <table className="w-full min-w-[640px] border-collapse">
               <thead>
-                <tr className="bg-slate-50">
-                  <th className="w-1/4 px-6 py-4 text-left text-xs font-semibold tracking-wide text-slate-500">
+                <tr className="bg-[#F0F0F3]">
+                  <th className="w-1/4 px-6 py-6 text-left text-lg font-semibold tracking-wide text-slate-500">
                     FACTOR
                   </th>
                   {columns.map((col, i) => (
                     <th
                       key={col}
-                      className={`w-1/4 px-6 py-4 text-left text-xs font-semibold tracking-wide ${
+                      className={`w-1/4 px-6 py-6 text-left text-lg font-semibold tracking-wide ${
                         i === 0
-                          ? "bg-indigo-50 text-indigo-600"
+                          ? "bg-indigo-100 text-indigo-600"
                           : "text-slate-500"
                       }`}
                     >
@@ -111,7 +111,7 @@ const EngagementComparison = () => {
           <button
             type="button"
             aria-label="Show more rows"
-            className="absolute left-1/2 top-[calc(50%+1rem)] flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-indigo-600 text-white shadow-md transition hover:bg-indigo-700"
+            className="absolute left-1/2 top-1/2 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-indigo-600 text-white shadow-md transition hover:bg-indigo-700"
           >
             <img src={ChevronDown} alt="Show more" className="h-5 w-5" />
           </button>

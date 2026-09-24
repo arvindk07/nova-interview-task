@@ -64,19 +64,17 @@ const FaqSection = () => {
             return (
               <div
                 key={faq.question}
-                className={`rounded-xl border transition-colors ${
-                  isOpen
-                    ? "border-blue-300 bg-blue-50/40"
-                    : "border-slate-200 bg-white"
+                className={`rounded-xl overflow-hidden border transition-colors ${
+                  isOpen ? "border-blue-300 " : "border-slate-200 bg-white"
                 }`}
               >
                 <button
                   type="button"
                   onClick={() => toggle(i)}
-                  className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+                  className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left bg-blue-50/40"
                 >
                   <span
-                    className={`font-semibold ${
+                    className={`font-semibold text-lg ${
                       isOpen ? "text-blue-600" : "text-slate-900"
                     }`}
                   >
@@ -91,8 +89,12 @@ const FaqSection = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-5">
-                    <p className="text-slate-500 leading-relaxed">
+                  <div
+                    className={`px-6 py-4 ${
+                      isOpen ? " bg-white" : " bg-white"
+                    }`}
+                  >
+                    <p className="text-slate-500 text-sm leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>

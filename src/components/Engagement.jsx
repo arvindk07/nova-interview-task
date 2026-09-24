@@ -4,7 +4,7 @@ const Engagement = () => {
       <div className="mx-auto grid inner-section grid-cols-1 gap-10 lg:grid-cols-[1.3fr_1fr] lg:gap-12">
         {/* Left column */}
         <div>
-          <p className="text-xs font-semibold tracking-widest text-indigo-600">
+          <p className="text-sm font-semibold tracking-widest text-indigo-600">
             THE ENGAGEMENT
           </p>
           <h1 className="mt-3 global-heading">
@@ -22,10 +22,10 @@ const Engagement = () => {
 
         {/* Right column */}
         <div className="Engagement-right-container">
-          <h2 className="text-sm font-semibold tracking-wide text-indigo-600">
+          <h2 className="text-[20px] font-semibold tracking-wide text-indigo-600">
             WHAT IS STAFF AUGMENTATION?
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-slate-500">
+          <p className="mt-4 text-base leading-relaxed text-slate-500">
             Staff augmentation is an engagement model where pre-vetted engineers
             join your existing team under your management, processes, and tools.
             The vendor handles employment, payroll, HR compliance, and

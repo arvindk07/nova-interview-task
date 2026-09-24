@@ -117,7 +117,7 @@ function CaseStudyCard({ study }) {
       <h3
         className="
           max-w-[450px]
-          text-[17px]
+          text-[22px]
           font-medium
           leading-[1.25]
           tracking-[-0.3px]
@@ -131,7 +131,7 @@ function CaseStudyCard({ study }) {
       <p
         className="
           mt-3
-          text-[12px]
+          text-[16px]
           leading-[1.65]
           text-[#686868]
         "
@@ -156,7 +156,7 @@ function CaseStudyCard({ study }) {
             {/* Value */}
             <div
               className="
-                text-[14px]
+                text-[24px]
                 font-medium
                 text-[#202020]
               "
@@ -168,7 +168,7 @@ function CaseStudyCard({ study }) {
             <div
               className="
                 mt-1
-                text-[9px]
+                text-[14px]
                 leading-[1.35]
                 text-[#858585]
               "
@@ -187,7 +187,7 @@ function CaseStudyCard({ study }) {
           inline-flex
           items-center
           gap-2
-          text-[10px]
+          text-[14px]
           font-medium
           text-[#0758e8]
           transition-colors
@@ -213,7 +213,7 @@ const ProofSection = () => {
     <section className="proof-section">
       <div className="inner-section">
         {/* Heading */}
-        <div className="mb-10">
+        <div className="mb-16">
           {/* Small Heading */}
           <p
             className="

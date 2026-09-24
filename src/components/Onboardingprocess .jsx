@@ -52,7 +52,7 @@ const OnboardingProcess = () => {
         {/* Header */}
         <div className=" border-b border-slate-100 pb-12 lg:grid-cols-2 lg:gap-16">
           <div className="">
-            <p className="text-xs font-semibold tracking-widest text-indigo-500">
+            <p className="text-sm font-semibold tracking-widest text-indigo-500">
               ONBOARDING TO ONGOING
             </p>
           </div>

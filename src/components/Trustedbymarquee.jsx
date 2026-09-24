@@ -34,12 +34,12 @@ const TrustedByMarquee = () => {
   return (
     <div className="w-full bg-white">
       {/* Top ticker bar */}
-      <div className="overflow-hidden bg-blue-900 py-3">
+      <div className="overflow-hidden bg-blue-900 py-5">
         <div className="flex w-max animate-marquee-fast">
           {[...tickerItems, ...tickerItems].map((item, i) => (
             <span
               key={i}
-              className="mx-4 flex shrink-0 items-center text-xs font-semibold tracking-wide text-white"
+              className="mx-4 flex shrink-0 items-center text-sm font-semibold tracking-wide text-white"
             >
               {item}
               <span className="ml-4 h-1 w-1 rounded-full bg-amber-400" />
@@ -49,16 +49,16 @@ const TrustedByMarquee = () => {
       </div>
 
       {/* Trusted by section */}
-      <div className="px-6 py-14 sm:px-10 lg:px-16">
-        <h2 className="text-center text-lg font-semibold text-slate-800">
+      <div className="py-7.5  inner-section">
+        <h2 className="text-center text-[20px] font-semibold text-slate-800">
           Trusted by startups and Fortune{" "}
           <span className="text-blue-600">500+</span> companies
         </h2>
 
-        <div className="relative mt-10 overflow-hidden">
+        <div className="relative mt-7 overflow-hidden">
           {/* Fade edges */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-white to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-white to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-6 bg-gradient-to-r from-white to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-6 bg-gradient-to-l from-white to-transparent" />
 
           <div className="flex w-max animate-marquee-slow items-center gap-16">
             {[...logos, ...logos].map((name, i) => (
